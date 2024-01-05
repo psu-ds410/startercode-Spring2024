@@ -10,7 +10,7 @@
 Github does not allow password authentication from the command line. Instead, you will need to use an access token in place of a password. To learn how to make one, go here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token . For easiest results, use the _classic_ token and click the "repo" box (make sure to set expiration date after the semester and final are over). More adventurous students can try the (better) fine-grained token. For fine-grained tokens, choose "only select repositories" and select your github classroom repository (see below), then in "Permissions" find "Contents" and select "read and write" access.
 
 # Step 1: Create your google classroom assignment repository:
-Sign into github. Then go here https://classroom.github.com/a/fkG5Chzy and use your psu email address to join.
+Sign into github. Then go here https://classroom.github.com/a/31urNzH1 and use your psu email address to join.
 
 # Step 2: Do this every time you are asked to clone your repository.
 *  Open up a terminal, connect to our cluster, and navigate to the folder you want to contain your repository.
