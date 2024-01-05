@@ -1,0 +1,4 @@
+# from the command line, type in the following commands:
+# source ./setup
+# and that's it. This only has to be done once.
+git remote add staff2 https://github.com/psu-ds410/startercode-Spring2024

@@ -1,0 +1,5 @@
+# When the starter code changes, type the following to get the latest changes
+# source ./updatestarter
+# and that's it. 
+
+git pull staff2 main --allow-unrelated-histories
