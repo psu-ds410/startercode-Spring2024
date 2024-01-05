@@ -1,5 +1,5 @@
 # Warning
-* **Github classroom behaves differnetly than Github. If you don't read these instructions, you will mess up your repository 💯% guaranteed, no matter how well you know git.** It will take more time to fix the mess than to read the instructions below.
+* **Github classroom behaves differently than Github. If you don't read these instructions, you will mess up your repository 💯% guaranteed, no matter how well you know git.** It will take more time to fix the mess than to read the instructions below.
 
 # What is inside?
 * This file explains how to get your own private repository from CMPSC/DS 410. You will use it to get your assignments and submit your work.
