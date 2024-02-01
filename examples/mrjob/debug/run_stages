@@ -1,0 +1,14 @@
+hdfs dfs -rm -r /user/$USER/kvnogroup
+hdfs dfs -rm -r /user/$USER/kvcombiner
+hdfs dfs -rm -r /user/$USER/redin
+
+python3 kv_nogroup.py testfile > kvnogroup.txt
+python3 kv_combiner_nogroup.py testfile > kvcombiner.txt
+python3 wc_redin_grouped.py testfile > redin.txt
+
+
+python3 kv_nogroup.py -r hadoop --hadoop-streaming-jar /home2/hadoop-3.3.6/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar --jobconf mapreduce.job.reduces=4 hdfs:///datasets/wap --output-dir hdfs:///user/$USER/kvnogroup --no-output
+
+python3 kv_combiner_nogroup.py -r hadoop --hadoop-streaming-jar /home2/hadoop-3.3.6/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar --jobconf mapreduce.job.reduces=4 hdfs:///datasets/wap --output-dir hdfs:///user/$USER/kvcombiner --no-output
+
+python3 wc_redin_grouped.py -r hadoop --hadoop-streaming-jar /home2/hadoop-3.3.6/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar --jobconf mapreduce.job.reduces=4 hdfs:///datasets/wap --output-dir hdfs:///user/$USER/redin --no-output
