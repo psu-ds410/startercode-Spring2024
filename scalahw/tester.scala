@@ -1,4 +1,4 @@
-object Tester {
+object Tester extends App {
    
     val q1answer: List[Int] = HW.q1(3)
 
