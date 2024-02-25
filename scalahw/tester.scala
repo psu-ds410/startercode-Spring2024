@@ -13,11 +13,11 @@ object Tester extends App {
     val q5answer_a: Double = HW.q5(List(1.0,2.0,3.0))
     val q5answer_b: Double = HW.q5(Vector(3.0,4.0,5.0))
 
-    val q6answer_a: Double = HW.q6(List((1.0, 2.0), (2.0,3.0), (3.0, 4.0)))
-    val q6answer_b: Double = HW.q6(Vector((3.0,4.0), (5.0. 6.0)))
+    val q6answer_a: Double = HW.q6(List((1.0, 2.0), (2.0, 3.0), (3.0, 4.0)))
+    val q6answer_b: Double = HW.q6(Vector((3.0, 4.0), (5.0, 6.0)))
 
-    val q7answer_a: Double = HW.q7(List((1.0, 2.0), (2.0,3.0), (3.0, 4.0)))
-    val q7answer_b: Double = HW.q7(Vector((3.0,4.0), (5.0. 6.0)))
+    val q7answer_a: Double = HW.q7(List((1.0, 2.0), (2.0, 3.0), (3.0, 4.0)))
+    val q7answer_b: Double = HW.q7(Vector((3.0, 4.0), (5.0, 6.0)))
 
     val q8answer: (Int, Int) = HW.q8(4)
 
