@@ -24,6 +24,9 @@ object Tester {
     val q9answer_a: Int = HW.q9(List(4,5,8,7))
     val q9answer_b: Int = HW.q9(Vector(4,5,8,7))
 
-    val q10answer_a: Double = HW.q10(List(1.0, 1e100, 1.0, -1e100))
-    val q10answer_b: Double = HW.q10(Vector(1.0, 1e100, 1.0, -1e100))
+    val q10answer_a: Int = HW.q10(List(4.0,5.0,8.0,7.0))
+    val q10answer_b: Int = HW.q10(Vector(4.0,5.0,8.0,7.0))
+
+    val q11answer_a: Double = HW.q11(List(1.0, 1e100, 1.0, -1e100))
+    val q11answer_b: Double = HW.q11(Vector(1.0, 1e100, 1.0, -1e100))
 }
