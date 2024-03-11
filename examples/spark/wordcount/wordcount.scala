@@ -1,6 +1,7 @@
 //mandatory imports for spark rdds
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
+import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext._
 
 object WordCount {  // all code must be inside an object or class
@@ -8,7 +9,7 @@ object WordCount {  // all code must be inside an object or class
         val sc = getSC()  // one function to get the sc variable
         val myrdd = getRDD(sc) // on function to get the rdd
         val counts = doWordCount(myrdd) // additional functions to do the computation
-        saveit(counts)  // save the rdd to HDFS
+        saveit(counts, "myresults")  // save the rdd to your home directory in HDFS
     }
 
     def getSC() = { // get the spark context variable
@@ -22,8 +23,8 @@ object WordCount {  // all code must be inside an object or class
     }
 
     def getTestRDD(sc: SparkContext) = { // create a small testing rdd
-         mylines = List("it was the best of times, wasn't it",
-                        "it was the worst of times of all time")
+         val mylines = List("it was the best of times, wasn't it",
+                            "it was the worst of times of all time")
          sc.parallelize(mylines, 3)
 
     }
@@ -37,8 +38,8 @@ object WordCount {  // all code must be inside an object or class
         counts
     }
 
-    def saveit(counts: org.apache.spark.rdd.RDD[(String, Long)]) = {
-      counts.saveAsTextFile("result")
+    def saveit(counts: org.apache.spark.rdd.RDD[(String, Int)], name: String) = {
+      counts.saveAsTextFile(name)
     }
 
 }
