@@ -4,6 +4,7 @@ import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext._
 
+
 object WordCount {  // all code must be inside an object or class
     def main(args: Array[String]) = {  // this is the entry point to our code
         val sc = getSC()  // one function to get the sc variable
@@ -40,6 +41,7 @@ object WordCount {  // all code must be inside an object or class
 
     def saveit(counts: RDD[(String, Int)], name: String) = {
       counts.saveAsTextFile(name)
+
     }
 
 }
