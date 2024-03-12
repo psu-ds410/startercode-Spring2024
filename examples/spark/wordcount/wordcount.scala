@@ -38,7 +38,7 @@ object WordCount {  // all code must be inside an object or class
         counts
     }
 
-    def saveit(counts: org.apache.spark.rdd.RDD[(String, Int)], name: String) = {
+    def saveit(counts: RDD[(String, Int)], name: String) = {
       counts.saveAsTextFile(name)
     }
 
