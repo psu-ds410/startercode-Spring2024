@@ -12,8 +12,8 @@ object WordCount {  // all code must be inside an object or class
     }
 
     def getSC() = { // get the spark context variable
-        val conf = new SparkConf().setAppName("wc")
-        val sc = new SparkContext(conf)
+        val conf = new SparkConf().setAppName("My Program Name") //change this
+        val sc = SparkContext.getOrCreate(conf)
         sc
     }
 
