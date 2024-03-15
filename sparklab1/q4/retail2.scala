@@ -3,7 +3,7 @@
 Object Q4 {
 
 
-    def doRetail(sc: SparkContext): RDD[(String, (Int, Double))] = {
+    def doRetail(input: RDD[String]): RDD[(String, (Int, Double))] = {
 
     }
     def getTestRDD(sc: SparkContext): RDD[String] = {
