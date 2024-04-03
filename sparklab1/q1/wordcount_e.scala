@@ -1,6 +1,6 @@
 
 
-Object Q1 {
+object Q1 {
 
 
     def doWordCount(input: RDD[String]): RDD[(String, Int)] = {

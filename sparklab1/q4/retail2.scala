@@ -1,6 +1,6 @@
 
 
-Object Q4 {
+object Q4 {
 
 
     def doRetail(input: RDD[String]): RDD[(String, (Int, Double))] = {
