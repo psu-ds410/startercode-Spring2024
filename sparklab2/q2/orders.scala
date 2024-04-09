@@ -2,7 +2,7 @@
 object Q2 {
 
 
-    def doOrders(input: RDD[String]): RDD[(String, Int)] = {
+    def doOrders(customers: RDD[String]): RDD[(String, Int)] = {
 
     }
     def getTestRDD(sc: SparkContext): RDD[String] = {
