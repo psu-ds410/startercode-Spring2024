@@ -17,8 +17,8 @@ object Q1 {
     }
 
     def registerZipCounter(spark: SparkSession) = {
-        val zipCounter = udf({x:String => x.split(" ").size})
-        spark.udf.register("zipCounter", zipCounter)
+        val zipCounter = udf({x:String => x.split(" ").size}) // creates the UDF that counts # of zip codes
+        spark.udf.register("zipCounter", zipCounter) // registers udf with the spark session
     }
 
     def doCity(input: DataFrame): DataFrame = {
@@ -33,12 +33,12 @@ object Q1 {
 
     def getSparkSession(): SparkSession = {
         val spark = SparkSession.builder().getOrCreate()
-        registerZipCounter(spark)
+        registerZipCounter(spark) // tells the spark session about the UDF
         spark
     }
 
     def getTestDF(spark: SparkSession): DataFrame = {
-        import spark.implicits._
+        import spark.implicits._ //so you can use .toDF
         // check slides carefully. note that you don't need to add headers, unlike RDDs
     }
 
