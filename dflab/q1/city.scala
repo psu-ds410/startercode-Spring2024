@@ -8,6 +8,7 @@ import org.apache.spark.sql.functions.udf
 object Q1 {
 
     def main(args: Array[String]) = {  // this is the entry point to our code
+        // do not change this function
         val spark = getSparkSession()
         import spark.implicits._
         val mydf = getDF(spark) 
