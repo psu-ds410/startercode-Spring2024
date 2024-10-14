@@ -15,6 +15,7 @@ object HW {
         1.0
     }
 
+    // you fill in the rest
     
     def q6(x: Seq[(Double, Double)]): (Double, Double) = {
         (1.0, 1.0)
